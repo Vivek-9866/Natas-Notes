@@ -11,4 +11,5 @@
 
 - Step-6: It will shows in red color. It is the simple checking that you are in root or not and below that root you will see " # " in red color that means Finally you can start the Terminal
 
-<img width="1920" height="922" alt="image" src="https://github.com/user-attachments/assets/0dafb2e6-f2a8-466f-82f9-5b7fffb998a3" />
+<img width="356" height="95" alt="image" src="https://github.com/user-attachments/assets/2ff14528-62f7-4dd5-8ffe-faa4dd7bea2a" />
+
