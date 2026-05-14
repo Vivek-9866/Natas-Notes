@@ -23,15 +23,16 @@
  - Password : natas0
  - Domain : http://natas0.natas.labs.overthewire.org
      # Explanination
-     -  Step 1: Go to Firefox Browser (Connection on Foxy proxy extension)
+ -  Step 1: Go to Firefox Browser (Connection on Foxy proxy extension)
 
 - Step 2: Connect to natas0.natas.labs.overthewire.org
 
 - Step 3: Then login with username and password
 
   <img width="842" height="471" alt="image" src="https://github.com/user-attachments/assets/8e464606-4261-4b03-b35a-ec9d3d398aa0" />
+
   - Step 4: You will see the page like this
-  - <img width="948" height="317" alt="image" src="https://github.com/user-attachments/assets/9f4bfe22-b53a-4eaa-a66a-46d945c0f19c" />
+   <img width="948" height="317" alt="image" src="https://github.com/user-attachments/assets/9f4bfe22-b53a-4eaa-a66a-46d945c0f19c" />
   - Step 5: You will need to find the password for level-1
   - Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
  
