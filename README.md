@@ -17,11 +17,11 @@
 - Step-7: Go to Downnloads . In Downloads Go to Burp suite . Then Run the Burp suite
  <img width="1237" height="313" alt="image" src="https://github.com/user-attachments/assets/e34ea307-5712-4711-b8d8-9f60e8b393cd" />
 <img width="1270" height="582" alt="image" src="https://github.com/user-attachments/assets/c584b126-91a0-4bdc-b088-2ec0d0359ec8" />
- - # Level-0 :
-- Username : natas0
-- Password : natas0
-- Domain : http://natas0.natas.labs.overthewire.org
-  - ## Explanination
+ ##  Level-0:
+ - Username : natas0
+ -  Password : natas0
+ -   Domain : http://natas0.natas.labs.overthewire.org
+ -    ## Explanination
 -  Step 1: Go to Firefox Browser (Connection on Foxy proxy extension)
 
 - Step 2: Connect to natas0.natas.labs.overthewire.org
@@ -54,7 +54,7 @@
  
   <img width="1272" height="681" alt="image" src="https://github.com/user-attachments/assets/3ac2f55e-44e7-4974-90c4-76e342fad333" />
 
-- ## level 1-
+- ## level 1:
 - Username : natas1
 - Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 - Domain : http://natas1.natas.labs.overthewire.org
