@@ -39,20 +39,62 @@
   - Step 8: In that proxy web you will intercept, Then click on intercept
   - Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
  
-  - <img width="1266" height="670" alt="image" src="https://github.com/user-attachments/assets/e5ae6e36-f5a6-47b3-960f-512592adef1e" />
+   <img width="1266" height="670" alt="image" src="https://github.com/user-attachments/assets/e5ae6e36-f5a6-47b3-960f-512592adef1e" />
   - Step 10: In that Proxy tab then click on history(HTTP History). Then you will see the natas 0 http link. Then click on that link, Then you will see the request
  
-  - <img width="1262" height="701" alt="image" src="https://github.com/user-attachments/assets/2598853d-53da-44ea-8072-8cc34325e0c1" />
+   <img width="1262" height="701" alt="image" src="https://github.com/user-attachments/assets/2598853d-53da-44ea-8072-8cc34325e0c1" />
   - Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater.
  
-  - <img width="1095" height="720" alt="image" src="https://github.com/user-attachments/assets/c8cb0314-14e7-4d55-9782-407b73820c1f" />
+   <img width="1095" height="720" alt="image" src="https://github.com/user-attachments/assets/c8cb0314-14e7-4d55-9782-407b73820c1f" />
   - Step 12: Then click on Repeater. Whenever once a highlight after send repeater, which is placed in menus bar
-  - <img width="1292" height="682" alt="image" src="https://github.com/user-attachments/assets/13ec73fa-db8d-47b9-beeb-1a539150c71d" />
+   <img width="1292" height="682" alt="image" src="https://github.com/user-attachments/assets/13ec73fa-db8d-47b9-beeb-1a539150c71d" />
 
   - Step 13: you will see request. Then click on send button. you will see the response.
   - Step 14: In that response you will see the password for level-1
  
-  - <img width="1272" height="681" alt="image" src="https://github.com/user-attachments/assets/3ac2f55e-44e7-4974-90c4-76e342fad333" />
+  <img width="1272" height="681" alt="image" src="https://github.com/user-attachments/assets/3ac2f55e-44e7-4974-90c4-76e342fad333" />
+
+- ## level 1-
+- Username : natas1
+- Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+- Domain : http://natas1.natas.labs.overthewire.org
+
+- ## explanation:
+  
+- Follow the same steps for level 1
+
+<img width="1267" height="520" alt="image" src="https://github.com/user-attachments/assets/68b43605-5075-42e4-ad28-561e3ec4f30a" />
+- In that response you will see the password for level-2
+
+- ## Level 2
+- Username : natas2
+- Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+- Domain : http://natas2.natas.labs.overthewire.org
+
+- up to same folow same step by step up next like this 
+<img width="987" height="725" alt="image" src="https://github.com/user-attachments/assets/5fc5dd0b-0838-4c72-81cc-549c9ba5fd70" />
+- <img width="1132" height="722" alt="image" src="https://github.com/user-attachments/assets/e0e56b64-4b56-44ef-9c98-640d002432e1" />
+
+- ## Level 3
+- Username : natas3
+- Password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+- Domain : http://natas3.natas.labs.overthewire.org
+
+- ## explanation:
+
+- follow same steps up to  you will see request. Then click on send button. you will see the response.
+-  In that response there is no password.
+  <img width="945" height="717" alt="image" src="https://github.com/user-attachments/assets/3067fc9f-914f-4563-9207-30a09bebbee0" />
+- Then foward the link or Disable the Burpsuite, Then Go to firefox browser, Then enter the leve2 link along with robots.txt
+-  Then enter the leve2 link along with /s3cr3t/
+-  Then click on that users.txt, Then you will see the password for level-3
+
+<img width="1128" height="172" alt="image" src="https://github.com/user-attachments/assets/edc977c1-9aaa-474c-9f87-86f4e0ea702d" />
+
+<img width="1091" height="402" alt="image" src="https://github.com/user-attachments/assets/2f670fd4-5d49-44ea-a7f9-beb30d5d8aa3" />
+
+<img width="1078" height="157" alt="image" src="https://github.com/user-attachments/assets/50dfa480-958c-4737-8896-c7395b533366" />
+
 
 
 
