@@ -30,13 +30,12 @@
 - Step 3: Then login with username and password
 
   <img width="842" height="471" alt="image" src="https://github.com/user-attachments/assets/8e464606-4261-4b03-b35a-ec9d3d398aa0" />
-
-  - Step 4: You will see the page like this
+-  Step 4: You will see the page like this
    <img width="948" height="317" alt="image" src="https://github.com/user-attachments/assets/9f4bfe22-b53a-4eaa-a66a-46d945c0f19c" />
-  - Step 5: You will need to find the password for level-1
-  - Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+ - Step 5: You will need to find the password for level-1
+ - Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
  
-  - <img width="1270" height="661" alt="image" src="https://github.com/user-attachments/assets/4c019974-def9-45a9-ab0c-8469728ca73b" />
+   <img width="1270" height="661" alt="image" src="https://github.com/user-attachments/assets/4c019974-def9-45a9-ab0c-8469728ca73b" />
   - Step 7: Go to Burp suite, then click on Proxy tab
   - Step 8: In that proxy web you will intercept, Then click on intercept
   - Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
@@ -96,6 +95,118 @@
 <img width="1091" height="402" alt="image" src="https://github.com/user-attachments/assets/2f670fd4-5d49-44ea-a7f9-beb30d5d8aa3" />
 
 <img width="1078" height="157" alt="image" src="https://github.com/user-attachments/assets/50dfa480-958c-4737-8896-c7395b533366" />
+
+- ## Level 4
+- Username : natas4
+- Password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+- Domain : http://natas4.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Connect to natas4.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this
+  <img width="760" height="232" alt="image" src="https://github.com/user-attachments/assets/7983042b-1e2e-45ff-af12-4a1853a9b1d3" />
+- Step 3: You will need to find the password for level-5
+- Step 4: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+- Step 5: Go to Burp suite, then click on Proxy tab
+- Step 6: Then Click on the intercept on (Receive)
+- Step 7: Go to firefox browser, In that output, Then refresh page
+  <img width="942" height="401" alt="image" src="https://github.com/user-attachments/assets/089bef2a-92fb-44c5-a09d-fc9446d894e6" />
+- Step 8: Go to Burpsuite, In intercept tab, Then you edit referer, Then change natas4 to natas5 in Raw or pretty in request tab.
+<img width="777" height="672" alt="image" src="https://github.com/user-attachments/assets/7fdecd70-08ad-469e-9480-691bc672a89f" />
+- Step 9: Then click forward.
+- Step 10: Go to firefox browser, you will the password for level-5
+
+- ## Level-5
+- Username : natas5
+- Password : 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+- Domain : http://natas5.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Connect to natas5.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+- step 3: Go to Burp suite, then click on Proxy tab , Then Click on the intercept on (Receive)
+- step 4:  Go to firefox browser, Then refresh page
+- step 5: Go to Burpsuite, In intercept tab, Then you edit cookie, Then change logged in =0 to logged in =1 in Raw or pretty in request tab.
+
+<img width="802" height="632" alt="image" src="https://github.com/user-attachments/assets/ae98b339-562b-4c77-a1a2-56bc44342eac" /> 
+- change it in to [logged in =1]
+- step 6: Then click forward.
+- Step 7: Go to firefox browser, you will the password for level-6
+
+-  ## Level 6
+-  Username : natas6
+- Password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+- Domain : http://natas6.natas.labs.overthewire.org
+
+- ## explanation:
+- Step 1: Go to Firefox Browser, Connect to natas6.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this, Then click on the link
+- Step 3: you will see the source code
+<img width="1011" height="607" alt="image" src="https://github.com/user-attachments/assets/68c25e20-955f-4e74-8b49-a9af2c29e6f2" />
+- Step 4: Then open natas6 link along with includes/secret.inc
+- Step 5: Then you will see the blank page, Then inspect that page
+- Step 6: Then you will see the Scecret password, Then copy that
+
+<img width="1217" height="307" alt="image" src="https://github.com/user-attachments/assets/d89b3e22-6fc5-497d-b328-51e137dc2855" />
+- Step 7: Go back to the previous page, Then you will paste that secret password
+- Step 8: Then you will get the password for level-7
+
+- ## Level-7
+- Username : natas7
+- Password : bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+- Domain : http://natas7.natas.labs.overthewire.org
+
+- ## Explanation:
+- Step 1: Go to Firefox Browser, Connect to natas7.natas.labs.overthewire.org, Then login with username and password
+- step 2: Follow the burp suite proxy steps as like as level 1 or level 2
+- Step 3: In that response there is no password. But it shows how to find the password
+<img width="1136" height="502" alt="image" src="https://github.com/user-attachments/assets/ac24b06f-77b2-4d58-9c36-db5d07bad555" />
+- Step 4: Then go to firefox browser, Then click home, you will see this and check the url clearly
+  <img width="952" height="327" alt="image" src="https://github.com/user-attachments/assets/487842d6-53c8-4e3e-8285-9562770621d0" />
+- Step 5: Then go to /etc/natas_webpass/natas8 along with home
+- Step 6: Then you will see the password for level-8 , check it once url also
+  <img width="802" height="317" alt="image" src="https://github.com/user-attachments/assets/f39b16ec-1e9f-4ff9-a9eb-6de60d4f0e88" />
+
+- ## Level -8
+- Username : natas8
+- Password : xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+- Domain : http://natas8.natas.labs.overthewire.org
+- ## Explanantion:
+- Step 1: Go to Firefox Browser, Then Connect to natas8.natas.labs.overthewire.org, Then login with username and password
+- step 2: do all the setps in burpsuite live perious levels
+- Step 3 : In that response it shows how to find the password, Go to view source code
+  <img width="1140" height="742" alt="image" src="https://github.com/user-attachments/assets/1a958ac2-d69c-4326-9b92-e610975336f9" />
+- Step 4: Hence to decode the secrete using
+ - step 5:
+- php -a
+- echo base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));
+- type above 2 lines in kali terminal
+- Explanantion :
+- php -a starts PHP interactive mode, allowing us to execute PHP commands directly in the terminal without creating a .php file.
+- hex2bin() converts hexadecimal data into readable text, strrev() reverses the string, and base64_decode() decodes Base64 encoded data.
+- These functions work step-by-step to reveal hidden or encoded information used in challenges and web applications.
+- Commonly used in OverTheWire, CTFs, and cybersecurity for decoding passwords, hidden values, and understanding encoding techniques.
+
+  <img width="895" height="192" alt="image" src="https://github.com/user-attachments/assets/8dd4e79c-9cfc-42a1-a91e-1c9d41ccb420" />
+- step 6: Now we decode the secret , copy that secret, Then go to firefox browser paste the secret , Then you will see the password for level-9
+
+- ## Level 9
+- Username : natas9
+- Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+- Domain : http://natas9.natas.labs.overthewire.org
+- ## Explanantion
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
 
 
