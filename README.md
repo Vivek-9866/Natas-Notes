@@ -127,7 +127,9 @@
 - step 5: Go to Burpsuite, In intercept tab, Then you edit cookie, Then change logged in =0 to logged in =1 in Raw or pretty in request tab.
 
 <img width="802" height="632" alt="image" src="https://github.com/user-attachments/assets/ae98b339-562b-4c77-a1a2-56bc44342eac" /> 
+
 - change it in to [logged in =1]
+  
 - step 6: Then click forward.
 - Step 7: Go to firefox browser, you will the password for level-6
 
@@ -141,11 +143,13 @@
 - Step 2: You will see the page like this, Then click on the link
 - Step 3: you will see the source code
 <img width="1011" height="607" alt="image" src="https://github.com/user-attachments/assets/68c25e20-955f-4e74-8b49-a9af2c29e6f2" />
+
 - Step 4: Then open natas6 link along with includes/secret.inc
 - Step 5: Then you will see the blank page, Then inspect that page
 - Step 6: Then you will see the Scecret password, Then copy that
 
 <img width="1217" height="307" alt="image" src="https://github.com/user-attachments/assets/d89b3e22-6fc5-497d-b328-51e137dc2855" />
+
 - Step 7: Go back to the previous page, Then you will paste that secret password
 - Step 8: Then you will get the password for level-7
 
@@ -159,11 +163,16 @@
 - step 2: Follow the burp suite proxy steps as like as level 1 or level 2
 - Step 3: In that response there is no password. But it shows how to find the password
 <img width="1136" height="502" alt="image" src="https://github.com/user-attachments/assets/ac24b06f-77b2-4d58-9c36-db5d07bad555" />
+
 - Step 4: Then go to firefox browser, Then click home, you will see this and check the url clearly
+  
   <img width="952" height="327" alt="image" src="https://github.com/user-attachments/assets/487842d6-53c8-4e3e-8285-9562770621d0" />
+  
 - Step 5: Then go to /etc/natas_webpass/natas8 along with home
 - Step 6: Then you will see the password for level-8 , check it once url also
+  
   <img width="802" height="317" alt="image" src="https://github.com/user-attachments/assets/f39b16ec-1e9f-4ff9-a9eb-6de60d4f0e88" />
+  
 
 - ## Level -8
 - Username : natas8
@@ -173,7 +182,9 @@
 - Step 1: Go to Firefox Browser, Then Connect to natas8.natas.labs.overthewire.org, Then login with username and password
 - step 2: do all the setps in burpsuite live perious levels
 - Step 3 : In that response it shows how to find the password, Go to view source code
+  
   <img width="1140" height="742" alt="image" src="https://github.com/user-attachments/assets/1a958ac2-d69c-4326-9b92-e610975336f9" />
+  
 - Step 4: Hence to decode the secrete using
  - step 5:
 - php -a
@@ -186,6 +197,7 @@
 - Commonly used in OverTheWire, CTFs, and cybersecurity for decoding passwords, hidden values, and understanding encoding techniques.
 
   <img width="895" height="192" alt="image" src="https://github.com/user-attachments/assets/8dd4e79c-9cfc-42a1-a91e-1c9d41ccb420" />
+  
 - step 6: Now we decode the secret , copy that secret, Then go to firefox browser paste the secret , Then you will see the password for level-9
 
 - ## Level 9
@@ -196,12 +208,14 @@
 - Step 1: Go to Firefox Browser, Then Connect to natas9.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
   <img width="1135" height="682" alt="image" src="https://github.com/user-attachments/assets/7f8842bf-e36d-4030-99b9-a89b6b36a3ee" />
+  
 - Step 3: So, we will use (;) to execute multiple commands. We will try to read the password at the next level.
 - ";cat /etc/natas_webpass/natas10 "
 - ";" is used to end the current command and execute a new command on the server.
 - "cat" is a Linux command used to display/read the contents of a file.
 - "/etc/natas_webpass/natas10" is the file path that stores the password for the natas10 level.
   <img width="867" height="382" alt="image" src="https://github.com/user-attachments/assets/cbe2e85f-ef72-4831-a3e9-e644f0967a75" />
+  
 - Step 4: Then you will see the password for level-10
 
 - ## Level-10
@@ -213,6 +227,7 @@
 - Step 1: Go to Firefox Browser, Then Connect to natas10.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
  <img width="1015" height="677" alt="image" src="https://github.com/user-attachments/assets/50664f82-f1dc-41ac-812e-307a8af560f9" />
+ 
 - Step 3: So, we will use (.*) to execute multiple commands
 - step 4: type this in user page .* /etc/natas_webpass/natas11
 - ".*" is a regular expression where . means “any character” and * means “repeat any number of times,” so together it matches everything.
@@ -220,6 +235,7 @@
 - "/etc/natas_webpass/natas11" is the target file path that contains the password for the natas11 level.
 
   <img width="755" height="386" alt="image" src="https://github.com/user-attachments/assets/34878a23-a3c3-4108-9851-c51afb2929d9" />
+  
 - Step 5: Then you will see the password for level-10
 
 - ## Level 11
