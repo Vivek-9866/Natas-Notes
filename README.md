@@ -229,6 +229,112 @@
 - ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas11.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this
+  
+  <img width="1187" height="353" alt="image" src="https://github.com/user-attachments/assets/da0e2ee3-5c26-4ea3-a873-d7e2dccba928" />
+
+- Step 3: Then click view source code
+
+
+<img width="1011" height="727" alt="image" src="https://github.com/user-attachments/assets/835cb95b-8fbf-4b30-b02c-49f4abbdfd8e" />
+
+
+<img width="687" height="621" alt="image" src="https://github.com/user-attachments/assets/328ce17f-b32d-425b-8f77-63d0068c1c65" />
+
+- Step 4: In that source code, data in cookie . So, we will change that data in cookie.
+
+- Step 5: Before that we set up the firefox browser proxy, into Burpsuite(Send). Then go to firefox browser, Then refresh page
+
+- Step 6: Go to Burpsuite, then click on intercept on (Receive), Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it. For decode the data we will use Burpsuite or Any other decoder website.
+
+
+
+  <img width="1541" height="667" alt="image" src="https://github.com/user-attachments/assets/a4555302-8dcf-47d6-b9b5-97c3c0113d57" />
+
+  
+- Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
+
+- ```php
+<html>
+<body>
+
+<?php
+
+$xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+$variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
+$original_text = json_encode($variable);
+
+function xor_encrypt($a, $b) {
+    $outText = '';
+
+    for ($i = 0; $i < strlen($a); $i++) {
+        $outText .= $a[$i] ^ $b[$i];
+    }
+
+    echo $outText;
+}
+
+xor_encrypt($xor_encrypted_text, $original_text);
+
+?>
+
+</body>
+</html>
+```
+
+
+<img width="1440" height="722" alt="image" src="https://github.com/user-attachments/assets/469259ba-d575-4a90-97f1-10424a4adf3a" />
+
+- Step 8: Found the key. Then we will write php code.
+
+- <html>
+<body>
+
+<?php
+
+function xor_encrypt($in) {
+$key = 'eDWo';
+$text = $in;
+$outText = '';
+
+// Iterate through each character
+
+for($i=0;$i<strlen($text);$i++) {
+$outText .= $text[$i] ^ $key[$i % strlen($key)];
+}
+
+return $outText;
+
+}
+
+$variable = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
+echo base64_encode(xor_encrypt(json_encode($variable)));
+
+?>
+
+</body>
+</html>
+
+
+<img width="1566" height="727" alt="image" src="https://github.com/user-attachments/assets/b3d9ceaf-ae7a-41f7-bacf-4cb69df67fd1" />
+
+- Step 9: Then you will see the group of charecters, copy that. Then Go to Burpsuite, Then paste that in data at cookie, Then click on forward.
+
+
+<img width="1142" height="630" alt="image" src="https://github.com/user-attachments/assets/be74f0ce-0373-45e5-a2e8-38c5ac844937" />
+
+- Step 10: Then you will see the password for level-12
+
+
+<img width="916" height="470" alt="image" src="https://github.com/user-attachments/assets/73d68575-5805-4473-9506-4465f84f761e" />
+
+
+
+
+
+
+
+
+
 
 
 
