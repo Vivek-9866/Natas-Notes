@@ -193,6 +193,52 @@
 - Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
 - Domain : http://natas9.natas.labs.overthewire.org
 - ## Explanantion
+- Step 1: Go to Firefox Browser, Then Connect to natas9.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code
+  <img width="1135" height="682" alt="image" src="https://github.com/user-attachments/assets/7f8842bf-e36d-4030-99b9-a89b6b36a3ee" />
+- Step 3: So, we will use (;) to execute multiple commands. We will try to read the password at the next level.
+- ";cat /etc/natas_webpass/natas10 "
+- ";" is used to end the current command and execute a new command on the server.
+- "cat" is a Linux command used to display/read the contents of a file.
+- "/etc/natas_webpass/natas10" is the file path that stores the password for the natas10 level.
+  <img width="867" height="382" alt="image" src="https://github.com/user-attachments/assets/cbe2e85f-ef72-4831-a3e9-e644f0967a75" />
+- Step 4: Then you will see the password for level-10
+
+- ## Level-10
+- Username : natas10
+- Password : t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+- Domain : http://natas10.natas.labs.overthewire.org
+
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas10.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code
+ <img width="1015" height="677" alt="image" src="https://github.com/user-attachments/assets/50664f82-f1dc-41ac-812e-307a8af560f9" />
+- Step 3: So, we will use (.*) to execute multiple commands
+- step 4: type this in user page .* /etc/natas_webpass/natas11
+- ".*" is a regular expression where . means “any character” and * means “repeat any number of times,” so together it matches everything.
+- It is used to bypass filters/search conditions by making the program accept all possible text patterns.
+- "/etc/natas_webpass/natas11" is the target file path that contains the password for the natas11 level.
+
+  <img width="755" height="386" alt="image" src="https://github.com/user-attachments/assets/34878a23-a3c3-4108-9851-c51afb2929d9" />
+- Step 5: Then you will see the password for level-10
+
+- ## Level 11
+- Username : natas11
+- Password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+- Domain : http://natas11.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas11.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this
+
+
+
+
+
+
+
+
+
+
 
 
 
