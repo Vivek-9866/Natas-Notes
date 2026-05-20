@@ -268,22 +268,23 @@
 
   
 - Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
+  
 
-- ```php
-<html>
-<body>
+- php
+- <html>
+- <body>
 
-<?php
+- <?php
 
-$xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
-$variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
-$original_text = json_encode($variable);
+- $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+- $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
+- $original_text = json_encode($variable);
 
-function xor_encrypt($a, $b) {
-    $outText = '';
+- function xor_encrypt($a, $b) {
+  -  $outText = '';
 
-    for ($i = 0; $i < strlen($a); $i++) {
-        $outText .= $a[$i] ^ $b[$i];
+   -  for ($i = 0; $i < strlen($a); $i++) {
+    -    $outText .= $a[$i] ^ $b[$i];
     }
 
     echo $outText;
