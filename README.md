@@ -303,7 +303,7 @@ xor_encrypt($xor_encrypted_text, $original_text);
 - Step 8: Found the key. Then we will write php code.
 
 - <html>
-<body>
+ <body>
 
 <?php
 
@@ -347,6 +347,7 @@ echo base64_encode(xor_encrypt(json_encode($variable)));
 
 
 
+<img width="622" height="117" alt="image" src="https://github.com/user-attachments/assets/e6196583-aee9-4bf4-a766-b1b9de6e5fe3" />
 
 
 
