@@ -268,8 +268,8 @@
 
   
 - Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
-  
-     ls -list
+-
+-     ls -list
 - php
 - <html>
 - <body>
