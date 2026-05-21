@@ -269,67 +269,66 @@
   
 - Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
 -
--     ls -list
-- php
-- <html>
-- <body>
+-     php
+-     <html>
+-     <body>
 
-- <?php
+-     <?php
 
-- $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
-- $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
-- $original_text = json_encode($variable);
+-     $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+-     $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
+-     $original_text = json_encode($variable);
 
-- function xor_encrypt($a, $b) {
-  -  $outText = '';
+-     function xor_encrypt($a, $b) {
+  -     $outText = '';
 
-   -  for ($i = 0; $i < strlen($a); $i++) {
-    -    $outText .= $a[$i] ^ $b[$i];
-    }
+   -     for ($i = 0; $i < strlen($a); $i++) {
+    -     $outText .= $a[$i] ^ $b[$i];
+          }
 
-    echo $outText;
-}
+          echo $outText;
+          }
 
-xor_encrypt($xor_encrypted_text, $original_text);
+          xor_encrypt($xor_encrypted_text, $original_text);
 
-?>
+          ?>
 
-</body>
-</html>
-```
+          </body>
+          </html>
+           ```
 
 
 <img width="1440" height="722" alt="image" src="https://github.com/user-attachments/assets/469259ba-d575-4a90-97f1-10424a4adf3a" />
 
 - Step 8: Found the key. Then we will write php code.
 
-- <html>
- <body>
+-     <html>
+      <body>
 
-<?php
+      <?php
 
-function xor_encrypt($in) {
-$key = 'eDWo';
-$text = $in;
-$outText = '';
+      function xor_encrypt($in) {
+      $key = 'eDWo';
+      $text = $in;
+      $outText = '';
 
-// Iterate through each character
+      // Iterate through each character
 
-for($i=0;$i<strlen($text);$i++) {
-$outText .= $text[$i] ^ $key[$i % strlen($key)];
-}
+      for($i=0;$i<strlen($text);$i++) {
+      $outText .= $text[$i] ^ $key[$i % strlen($key)];
+      }
 
-return $outText;
+      return $outText;
 
-}
+      }
+ 
+      $variable = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
+      echo base64_encode(xor_encrypt(json_encode($variable)));
 
-$variable = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
-echo base64_encode(xor_encrypt(json_encode($variable)));
+      ?>
 
-?>
-
-</body>
-</html>
+      </body>
+      </html>
 
 
 <img width="1566" height="727" alt="image" src="https://github.com/user-attachments/assets/b3d9ceaf-ae7a-41f7-bacf-4cb69df67fd1" />
@@ -344,11 +343,85 @@ echo base64_encode(xor_encrypt(json_encode($variable)));
 
 <img width="916" height="470" alt="image" src="https://github.com/user-attachments/assets/73d68575-5805-4473-9506-4465f84f761e" />
 
+- ## Level-12
+- Username : natas12
+- Password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+- Domain : http://natas12.natas.labs.overthewire.org
 
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas12.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this
 
+  <img width="747" height="340" alt="image" src="https://github.com/user-attachments/assets/a1e94cfd-dcf7-4b86-ba47-91e775158f9e" />
+  
+- Step 3: Then you want to upload file but not get password for level-13
+- Step 4: Then you will see the source code. Found the ext (extention) that means it is a vulnarabilities 
 
+  <img width="862" height="751" alt="image" src="https://github.com/user-attachments/assets/b478d838-ccba-4c65-a42b-c744c0d3e815" />
+
+- Step 5: So change the extention .jpg to .php, In a code by inspecting the source code, or by using Burpsuite.
+
+ <img width="1012" height="597" alt="image" src="https://github.com/user-attachments/assets/96c31db1-6893-414f-9168-ef6969fedb40" />
+
+ - Step 6: Then you need to upload a file . Create file with name .php by using nano command
 
 <img width="622" height="117" alt="image" src="https://github.com/user-attachments/assets/e6196583-aee9-4bf4-a766-b1b9de6e5fe3" />
+
+<img width="956" height="417" alt="image" src="https://github.com/user-attachments/assets/87d35201-df48-48d2-9a45-3bb15e5267bf" />
+
+- Step 7: Then you will upload the file
+
+<img width="760" height="352" alt="image" src="https://github.com/user-attachments/assets/0535366a-2c1e-467d-bc63-cfc053d266d7" />
+
+- Step 8: Then you will see the uploaded file, Then click on that file
+
+<img width="907" height="456" alt="image" src="https://github.com/user-attachments/assets/15c9ed0f-383b-4e19-b9ed-829540596e45" />
+
+- ## Level-13
+- Username : natas13
+- Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+- Domain : http://natas13.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas13.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code
+
+<img width="805" height="711" alt="image" src="https://github.com/user-attachments/assets/61ac268c-35a7-43bf-ab18-7249c2953db6" />
+- Step 3: It accept only image format only , That's why we use BMP file format.
+- Step 4: Create file with name .bmp by using nano command
+
+  <img width="675" height="147" alt="image" src="https://github.com/user-attachments/assets/483e24e0-0e7b-40ef-b528-085fc72dbe6a" />
+
+- Step 5: File convert into image format by using BMP file format
+
+  <img width="806" height="242" alt="image" src="https://github.com/user-attachments/assets/01e25100-7405-4c8e-aa80-360070a5b01b" />
+
+- step 6: Then upload the file. But you will not get the password for level-14
+
+- Step 7: Go to Browser send to Burpsuite, Then refresh the page, Return back Browser upload a file Again send to Burpsuite, Then refresh the page
+
+  <img width="720" height="690" alt="image" src="https://github.com/user-attachments/assets/1218d2d3-399b-45a4-a80b-c153996ff3f3" />
+
+- Step 8: Then edit the properties of file in Burpsuite, Then click on forward
+
+ <img width="702" height="675" alt="image" src="https://github.com/user-attachments/assets/c7112eb5-c1de-49ff-a5c5-210896975f17" />
+
+ - Step 9: It shows like this, Then click on that link, navigate to Burpsuite then click forward
+
+   <img width="825" height="485" alt="image" src="https://github.com/user-attachments/assets/9196bdbc-fa22-4c4c-b7c4-e736a6991e96" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
