@@ -1239,6 +1239,50 @@
 
 
 
+## Level-31
+- Username : natas31
+- Password : m7bfjAHpJmSYgQWWeqRE2qVBuMiRNq0y
+- Domain : http://natas31.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas31.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: You will see the page like this
+
+  <img width="1062" height="465" alt="image" src="https://github.com/user-attachments/assets/7a5b48f4-7fed-454c-ba5a-af63a7b028b9" />
+
+- Step 3: Then click view source code, it's a perl script
+
+- step 4: crete a file in nano editior save it as like txt , .py ur wish  after that upload the file in natas31 login page 
+
+- Step 4: So, if you want to upload any file after upload it will show contents in their file
+
+- Step 5: Go to Burpsuite switch on the intercept on (Receive)
+
+- Step 6: First set up firefox proxy on Burp suite, Browse a file, then upload it, It will navigate to burpsuite
+
+<img width="925" height="672" alt="image" src="https://github.com/user-attachments/assets/f29fbb01-c6c5-4559-a3bf-472be6aa43f6" />
+
+- Step 7: In that burpsuite will you see Hi it's a contents of a file, what we have uploaded , Then we need to change that properties,
+
+      - ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
+     
+      some special charects can not put in url, So we can go through this type url 
+     
+                 ?cat /etc/natas_webpass/natas32 |
+                 
+      space encoded %20 , pipe line | encoded as %7C , C is captal letter 
+       
+                 ?cat%20/etc/natas_webpass/natas32%20%7C
+- Step 8: After change that properties, it will look like this same type like this picture
+
+<img width="886" height="680" alt="image" src="https://github.com/user-attachments/assets/0f21578a-fc97-40f4-bb24-f7a4fb121be9" />
+
+- Step 9: Then click Forward button, we will get the password for Natas32
+
+<img width="932" height="307" alt="image" src="https://github.com/user-attachments/assets/9dc4acd5-8430-44d5-8870-969951ed0589" />
+
+
+
 
 
 
