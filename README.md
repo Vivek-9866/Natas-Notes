@@ -1396,10 +1396,6 @@
 
 - Step 14: Go to http history, Then click what you click previously natas.phar file, Then click send Repeater, Then click on Repeater
 
-<img width="737" height="693" alt="image" src="https://github.com/user-attachments/assets/f8d3c00b-4e35-4d72-aa2f-673bc482187f" /><img width="498" height="498" alt="CongratulationsWellDoneSimonCowellGIF" src="https://github.com/user-attachments/assets/39255939-4967-4915-a05c-cd9599017d8c" />
-
-
-
 - Step 15: Then changes that propertiy to phar://natas.phar/test.txt, Then click send button
 
 - Step 16: Then you will see the password for level-34
@@ -1419,7 +1415,9 @@
   <img width="1910" height="352" alt="image" src="https://github.com/user-attachments/assets/29c78916-190a-4c9b-9ff9-d7757268b78d" />
 
 
-<img width="498" height="498" alt="IWasntFinishedCharleyGIF" src="https://github.com/user-attachments/assets/4a7da72e-687a-4771-8be6-f7db236acaa7" />
+  
+
+<img width="737" height="693" alt="image" src="https://github.com/user-attachments/assets/f8d3c00b-4e35-4d72-aa2f-673bc482187f" /><img width="498" height="498" alt="CongratulationsWellDoneSimonCowellGIF" src="https://github.com/user-attachments/assets/39255939-4967-4915-a05c-cd9599017d8c" />
 
 
 
