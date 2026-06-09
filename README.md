@@ -761,7 +761,8 @@
 
 - Step 4: Using admin , But there is no output
 
-  <img width="956" height="473" alt="image" src="https://github.com/user-attachments/assets/e4e1d9e9-6eaf-4039-96ff-803dec44b8dc" />
+     <img width="1642" height="448" alt="image" src="https://github.com/user-attachments/assets/69d25a3f-1479-4c21-adfb-46ea3b666be5" />
+
 
 - Step 5: Then using admin , set up the proxy on Burp suite in fire fox browser (Send), Then Click change the name
 
