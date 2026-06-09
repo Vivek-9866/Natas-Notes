@@ -744,46 +744,60 @@
 
 
 
-- ## Level-20
+ ## Level-20
 - Username : natas20
 - Password : p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
 - Domain : http://natas20.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas20.natas.labs.overthewire.org, Then login with username and password
+
+  <img width="1605" height="558" alt="image" src="https://github.com/user-attachments/assets/75b256cc-aa5a-417d-b378-32c959af4929" />
+
 
 - Step 2: click on view sourcecode once check it
 - Step 3: In a code it has a debug , So we will use it, at the along with the natas20 link type (?debug)
 
-  <img width="1287" height="426" alt="image" src="https://github.com/user-attachments/assets/0375d115-7a20-40b2-b10d-7bb1dc18e467" />
+   <img width="1665" height="632" alt="image" src="https://github.com/user-attachments/assets/22056fd7-3a69-4991-8ba1-c6d8e6e65853" />
 
-- Step 4: Using try\nadmin 1 , But there is no output
+- Step 4: Using admin , But there is no output
 
   <img width="956" height="473" alt="image" src="https://github.com/user-attachments/assets/e4e1d9e9-6eaf-4039-96ff-803dec44b8dc" />
 
+- Step 5: Then using admin , set up the proxy on Burp suite in fire fox browser (Send), Then Click change the name
+
+- Step 6: Go to Burp suite, then click in intercept on (Receive), You will see the request
+
+
+    <img width="1915" height="673" alt="image" src="https://github.com/user-attachments/assets/b1744204-96f3-42b3-b270-5814cc335928" />
+
+- step 7: after send to repeter and do some changes in code like add (?debug)
+
+<img width="1658" height="895" alt="image" src="https://github.com/user-attachments/assets/c9817104-cc7a-4bae-b6fa-e74097b0e1a5" />
+
+- step 8: lets try to find password , try to change name admin to test let's see
+
+<img width="1567" height="791" alt="image" src="https://github.com/user-attachments/assets/5dbf6b9e-6a29-4dd9-a8f6-ea89850b2283" />
+
+- step 9: now try another name like different name
+
+<img width="1570" height="692" alt="image" src="https://github.com/user-attachments/assets/355b7306-feca-4458-811e-e907a3d6a6d3" />
+
+- step 10: in Name type [ admin%0Aadmin%201 ]    -> %0A- linefeed  , %20- space
+
+- here we go the password for next level 
+
+<img width="1575" height="787" alt="image" src="https://github.com/user-attachments/assets/68be7e15-f951-4ce1-82fb-61614d916902" />
+
+<img width="1492" height="722" alt="image" src="https://github.com/user-attachments/assets/07d0c497-3bf0-42b7-9ddb-79f2b226dc69" />
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- ## Level-21
+ ## Level-21
 - Username : natas21
 - Password : BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
 - Domain : http://natas21.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas21.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Lets view the source code
   <img width="1237" height="628" alt="image" src="https://github.com/user-attachments/assets/3616ca06-7102-4daf-ac42-c78c6a4437f7" />
