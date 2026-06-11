@@ -867,11 +867,11 @@
 <img width="1388" height="556" alt="image" src="https://github.com/user-attachments/assets/35224aae-fe99-4c05-9ed4-c60fcb93f3fc" />
 
 
-- ## Level-22
+ ## Level-22
 - Username : natas22
 - Password : d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
 - Domain : http://natas22.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas22.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Lets view the source code
 - Step 3: In that source code revelio function is used to get the password for level-22 (type revelio in link then go to burpsuite try next step)
@@ -895,11 +895,11 @@
   <img width="1257" height="648" alt="image" src="https://github.com/user-attachments/assets/16bdcb37-eb82-487e-a123-92ed66109bab" />
 
 
-- ## Level-23
+ ## Level-23
 - Username : natas23
 - Password : dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
 - Domain : http://natas23.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas23.natas.labs.overthewire.org, Then login with username and password
 
 - Step 2: Lets view the source code
@@ -915,11 +915,11 @@
   <img width="711" height="727" alt="image" src="https://github.com/user-attachments/assets/97088ea6-5cf4-427c-a5a3-6e82c790281f" />
 
 
-- ## Level-24
+ ## Level-24
 - Username : natas24
 - Password : MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
 - Domain : http://natas24.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas24.natas.labs.overthewire.org, Then login with username and password && check the source code
 - Step 2: Then we will enter 11iloveyou, then click login
 
@@ -936,11 +936,11 @@
   <img width="872" height="517" alt="image" src="https://github.com/user-attachments/assets/50a57e2b-c8fd-469e-833d-e0ce8725c6d2" />
 
 
-- ## Level-25
+ ## Level-25
 - Username : natas25
 - Password : ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
 - Domain : http://natas25.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas25.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this
 
@@ -959,21 +959,41 @@
 
 
 
-- ## Level-26
+ ## Level-26
 - Username : natas26
 - Password : cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
 - Domain : http://natas26.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas26.natas.labs.overthewire.org, Then login with username and password
+- step 2: give some random values in that coordinates then click on draw  & check the source code
+
+      we will drawing coocike input object type logger class intialize it with are own values of log file  init msg and exit msg according to a need of 
+     
+      set log file name of random php file it will store the contents of the directory and in exit msg we wwill write php code which will be exicute the contents 
+     
+      in the contents /etc/natas_webpass/natas26 , this directory  ultimately stored in log file 
+     
+     
+- Step 3: So, we will need to write php code then run online platform or php.
+
+ <img width="1252" height="523" alt="image" src="https://github.com/user-attachments/assets/27da4f8f-d79c-4a94-a774-7d074706e6bd" />
+
+- Step 4: Then copy of that outpout, Then paste in burpsuite
+
+- Step 5: That the process is , go to burpsuite, Then switch on the intercept on (Receive), Then go to firefox browser, Then setup proxy on Burp suite (Send), Then refresh the page, it navigate to burpsuite
+
+- Step 6: In that burpsuite, then In Intercept you will see the request, in a request you will see the drawing, Then change it, what you get from php code output
+, Then click forward
 
 
+<img width="1262" height="696" alt="image" src="https://github.com/user-attachments/assets/dbd4b028-5f3e-401a-a9c4-0816babc64af" />
+
+- Step 7: After forward, there is no password for level-26
+
+- Step 8: Then we will use /img/natas26_shell.php , Then along with natas26 link, Then load the page, Finally we will see the password for level-26
 
 
-
-
-
-
-
+<img width="1676" height="622" alt="image" src="https://github.com/user-attachments/assets/28af6671-199c-4311-9b5a-b0ffd4a2225b" />
 
 
 
