@@ -55,33 +55,33 @@
  
   <img width="1272" height="681" alt="image" src="https://github.com/user-attachments/assets/3ac2f55e-44e7-4974-90c4-76e342fad333" />
 
-- ## level 1:
+ ## level 1:
 - Username : natas1
 - Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 - Domain : http://natas1.natas.labs.overthewire.org
 
-- ## explanation:
+ ## explanation:
   
 - Follow the same steps for level 1
 
 <img width="1267" height="520" alt="image" src="https://github.com/user-attachments/assets/68b43605-5075-42e4-ad28-561e3ec4f30a" />
 - In that response you will see the password for level-2
 
-- ## Level 2
+ ## Level 2
 - Username : natas2
 - Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 - Domain : http://natas2.natas.labs.overthewire.org
-
+## explnantion:
 - up to same folow same step by step up next like this 
 <img width="987" height="725" alt="image" src="https://github.com/user-attachments/assets/5fc5dd0b-0838-4c72-81cc-549c9ba5fd70" />
 - <img width="1132" height="722" alt="image" src="https://github.com/user-attachments/assets/e0e56b64-4b56-44ef-9c98-640d002432e1" />
 
-- ## Level 3
+ ## Level 3
 - Username : natas3
 - Password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 - Domain : http://natas3.natas.labs.overthewire.org
 
-- ## explanation:
+ ## explanation:
 
 - follow same steps up to  you will see request. Then click on send button. you will see the response.
 -  In that response there is no password.
@@ -96,11 +96,11 @@
 
 <img width="1078" height="157" alt="image" src="https://github.com/user-attachments/assets/50dfa480-958c-4737-8896-c7395b533366" />
 
-- ## Level 4
+ ## Level 4
 - Username : natas4
 - Password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 - Domain : http://natas4.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Connect to natas4.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this
   <img width="760" height="232" alt="image" src="https://github.com/user-attachments/assets/7983042b-1e2e-45ff-af12-4a1853a9b1d3" />
@@ -115,11 +115,11 @@
 - Step 9: Then click forward.
 - Step 10: Go to firefox browser, you will the password for level-5
 
-- ## Level-5
+ ## Level-5
 - Username : natas5
 - Password : 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 - Domain : http://natas5.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Connect to natas5.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 - step 3: Go to Burp suite, then click on Proxy tab , Then Click on the intercept on (Receive)
@@ -133,12 +133,12 @@
 - step 6: Then click forward.
 - Step 7: Go to firefox browser, you will the password for level-6
 
--  ## Level 6
+  ## Level 6
 -  Username : natas6
 - Password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 - Domain : http://natas6.natas.labs.overthewire.org
 
-- ## explanation:
+ ## explanation:
 - Step 1: Go to Firefox Browser, Connect to natas6.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this, Then click on the link
 - Step 3: you will see the source code
@@ -153,12 +153,12 @@
 - Step 7: Go back to the previous page, Then you will paste that secret password
 - Step 8: Then you will get the password for level-7
 
-- ## Level-7
+ ## Level-7
 - Username : natas7
 - Password : bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
 - Domain : http://natas7.natas.labs.overthewire.org
 
-- ## Explanation:
+ ## Explanation:
 - Step 1: Go to Firefox Browser, Connect to natas7.natas.labs.overthewire.org, Then login with username and password
 - step 2: Follow the burp suite proxy steps as like as level 1 or level 2
 - Step 3: In that response there is no password. But it shows how to find the password
@@ -174,11 +174,11 @@
   <img width="802" height="317" alt="image" src="https://github.com/user-attachments/assets/f39b16ec-1e9f-4ff9-a9eb-6de60d4f0e88" />
   
 
-- ## Level -8
+ ## Level -8
 - Username : natas8
 - Password : xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
 - Domain : http://natas8.natas.labs.overthewire.org
-- ## Explanantion:
+ ## Explanantion:
 - Step 1: Go to Firefox Browser, Then Connect to natas8.natas.labs.overthewire.org, Then login with username and password
 - step 2: do all the setps in burpsuite live perious levels
 - Step 3 : In that response it shows how to find the password, Go to view source code
@@ -200,11 +200,11 @@
   
 - step 6: Now we decode the secret , copy that secret, Then go to firefox browser paste the secret , Then you will see the password for level-9
 
-- ## Level 9
+ ## Level 9
 - Username : natas9
 - Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
 - Domain : http://natas9.natas.labs.overthewire.org
-- ## Explanantion
+ ## Explanantion
 - Step 1: Go to Firefox Browser, Then Connect to natas9.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
   <img width="1135" height="682" alt="image" src="https://github.com/user-attachments/assets/7f8842bf-e36d-4030-99b9-a89b6b36a3ee" />
@@ -218,12 +218,12 @@
   
 - Step 4: Then you will see the password for level-10
 
-- ## Level-10
+ ## Level-10
 - Username : natas10
 - Password : t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
 - Domain : http://natas10.natas.labs.overthewire.org
 
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas10.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
  <img width="1015" height="677" alt="image" src="https://github.com/user-attachments/assets/50664f82-f1dc-41ac-812e-307a8af560f9" />
@@ -238,11 +238,11 @@
   
 - Step 5: Then you will see the password for level-10
 
-- ## Level 11
+ ## Level 11
 - Username : natas11
 - Password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 - Domain : http://natas11.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas11.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this
   
@@ -343,12 +343,12 @@
 
 <img width="916" height="470" alt="image" src="https://github.com/user-attachments/assets/73d68575-5805-4473-9506-4465f84f761e" />
 
-- ## Level-12
+ ## Level-12
 - Username : natas12
 - Password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
 - Domain : http://natas12.natas.labs.overthewire.org
 
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas12.natas.labs.overthewire.org, Then login with username and password
 - Step 2: You will see the page like this
 
@@ -377,11 +377,11 @@
 
 <img width="907" height="456" alt="image" src="https://github.com/user-attachments/assets/15c9ed0f-383b-4e19-b9ed-829540596e45" />
 
-- ## Level-13
+ ## Level-13
 - Username : natas13
 - Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 - Domain : http://natas13.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas13.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
 
@@ -410,11 +410,11 @@
    <img width="825" height="485" alt="image" src="https://github.com/user-attachments/assets/9196bdbc-fa22-4c4c-b7c4-e736a6991e96" />
 
 
-- ## Level - 14
+ ## Level - 14
 - Username : natas14
 - Password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 - Domain : http://natas14.natas.labs.overthewire.org
-- Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas14.natas.labs.overthewire.org, Then login with username and password
 - step 2:  Then click view source code & once read that code
 - Step 3: Then you will OR operation , to find the password, Then click on that Login.
@@ -431,11 +431,11 @@
  <img width="935" height="373" alt="image" src="https://github.com/user-attachments/assets/3f8de308-5c1d-4601-a42c-a1d4d8ceb612" />
 
 
-- ## Level -15:
+ ## Level -15:
 - Username : natas15
 - Password : SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
 - Domain : http://natas15.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas15.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
   
@@ -502,11 +502,11 @@
 
 
 
-- ## Level-16
+ ## Level-16
 - Username : natas16
 - Password : hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 - Domain : http://natas16.natas.labs.overthewire.org
-- ## Explanation :
+ ## Explanation :
   
 - Step 1: Go to Firefox Browser, Then Connect to natas16.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Then click view source code
@@ -565,11 +565,11 @@
 <img width="690" height="765" alt="image" src="https://github.com/user-attachments/assets/d073fa0e-3711-4a42-950f-016dc782b53b" />
 
 
-- ## Level 17
+ ## Level 17
 - Username : natas17
 - Password : EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
 - Domain : http://natas17.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas17.natas.labs.overthewire.org, Then login with username and password
 - Step 2: Lets check the natas17 existency or not
   
@@ -634,11 +634,11 @@
 
 
 
-- ## Level-18
+ ## Level-18
 - Username : natas18
 - Password : 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
 - Domain : http://natas18.natas.labs.overthewire.org
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas18.natas.labs.overthewire.org, Then login with username and password
   
 <img width="948" height="507" alt="image" src="https://github.com/user-attachments/assets/3b6387b6-d5b0-42c6-b64a-cdd83524f2c9" />
@@ -699,12 +699,12 @@
 
 
 
- - ## Level-19
+  ## Level-19
 - Username : natas19
 - Password : tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
 - Domain : http://natas19.natas.labs.overthewire.org
 
-- ## Explanation
+ ## Explanation
 - Step 1: Go to Firefox Browser, Then Connect to natas19.natas.labs.overthewire.org, Then login with username and password
 
 - Step 2: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
@@ -1478,6 +1478,68 @@
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-  ##  _______________________________ COMPLETED ___________________________________________
+
+
+
+
+
+
+
+
+
+
+
 
 <img width="737" height="693" alt="image" src="https://github.com/user-attachments/assets/f8d3c00b-4e35-4d72-aa2f-673bc482187f" /><img width="498" height="498" alt="CongratulationsWellDoneSimonCowellGIF" src="https://github.com/user-attachments/assets/39255939-4967-4915-a05c-cd9599017d8c" />
 
