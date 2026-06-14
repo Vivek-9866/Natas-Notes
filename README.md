@@ -949,12 +949,39 @@
   - Step 3: Lets view the source code
  
     <img width="820" height="702" alt="image" src="https://github.com/user-attachments/assets/0efec2a5-fb9c-4864-a78d-bc40182c37d2" />
+    
+- Step 4: Then we will search for natas26 password. By using diversary traversal attack
 
+      - include funtion will display our contents
+      
+      diversary traversal attack, if you could some how travel to the root directory to the websever
+      
+      as we can see safe include funtion ../ symbole get replaced by empty string so we will not able to the root directory   
+      
+      ../ it will not remove , we do not know how many strings go back
+      
+      ..// use this symbole however many directories we are still able to reach to root directory
 
+- Step 5: For travel we need to have PASSIPHPSESSID, we will get from Burpsuite, for that browser setup burp suite (Send), Then load the page,
 
+- Step 6: Then we will switch on the intercept on (Receive), in that request you will see the PHPSESSID
 
+  <img width="1910" height="750" alt="image" src="https://github.com/user-attachments/assets/30c9caf8-b607-471c-a8b9-4680e9e724c6" />
 
+- Step 7: Then we use /var/www/natas_webpass/natas25_ , PASSIPHPSESSID, Then use .log then search it or load it.
 
+      http://natas25.natas.labs.overthewire.org/?lang=....//....//....//....//....//var/www/natas/natas25/logs/natas25_nobiuctjsb0llaak4to1e1g8pj.log
+
+- Step 8: Then we will get the password for level-26 or did n't get any password continue to method two
+
+##  Method 2
+- Step 1: After using traversal attack then load that page , Go to Burpsuite, Then go to repeater
+
+- Step 2: Then change that User-Agent like this , Before click send button
+
+      <?php include("*/etc/natas_webpass/natas26");?>
+
+ <img width="1566" height="735" alt="image" src="https://github.com/user-attachments/assets/0479a550-9960-4d09-a9f9-9b2cee8db6ab" />
 
 
 
