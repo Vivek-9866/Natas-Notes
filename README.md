@@ -1541,8 +1541,6 @@
 
 
 
-<img width="737" height="693" alt="image" src="https://github.com/user-attachments/assets/f8d3c00b-4e35-4d72-aa2f-673bc482187f" /><img width="498" height="498" alt="CongratulationsWellDoneSimonCowellGIF" src="https://github.com/user-attachments/assets/39255939-4967-4915-a05c-cd9599017d8c" />
-
 
 
 
